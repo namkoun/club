@@ -18,8 +18,25 @@ Authenticated username:
 <div sec:authentication="name"></div>
 Authenticated user roles:
 <div sec:authentication="principal.authorities"></div>
-
+<button class="btn">test button</button>
 
 </div>
+
+<script src="javascript">
+
+    /*$(".btn").click(function (){ //외부에서 '/notes/xxx' 을 사용할때
+        $.ajax({
+            beforeSend:function (request){
+                request.setRequestHeader("Authorization",'Bearer '+ jwtValue);
+            },
+            dataType: "json",
+            url: 'http://localhost:8080/notes/all',
+            data: {email: 'user100@zerock.org'},
+            success: function (arr){
+                console.log(arr);
+            }
+        })
+    })*/
+</script>
 </body>
 </html>

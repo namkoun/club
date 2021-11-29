@@ -20,7 +20,7 @@ public class JWTTests {
         String str = jwtUtil.generateToken(email);
 
         Thread.sleep(5000);
-        String resultEmail                 = jwtUtil.validateAndExtract(str);
+        String resultEmail = jwtUtil.validateAndExtract(str);
         System.out.println(resultEmail);
 
     }
